@@ -6,6 +6,10 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+    
+    #correct the mistake of categories in admin page
+    class Meta:
+        verbose_name_plural='categories'
 
 
 class Customer(models.Model):
